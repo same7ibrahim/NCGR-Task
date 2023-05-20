@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NCGR Task</string>
+    <string name="close">Close</string>
+    <string name="timeout_error_msg">Request Time Out</string>
+    <string name="un_expected_error_msg">Something Went Wrong</string>
+    <string name="un_auth_user">Unauthorized User</string>
+    <string name="not_found">Not Found</string>
+    <string name="check_your_network_connection">Check Your Internet Connection</string>
+</resources>

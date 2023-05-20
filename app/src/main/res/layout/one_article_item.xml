@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.blackstoneeit.ncgrtask.presentation.main.mostviewed.widget.ArticleUiModel" />
+
+
+        <variable
+            name="clickListener"
+            type="com.blackstoneeit.ncgrtask.presentation.main.mostviewed.widget.OnItemClickListener" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="10dp"
+        android:onClick="@{()->clickListener.onItemClick(model, position)}"
+        app:cardPreventCornerOverlap="false">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_course_image"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:imageUrl="@{model.articleImage}"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_course_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_small_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="@{model.articleTitle}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_normal_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_course_image" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_course_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_small_normal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@{model.articleDescription}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_tiny"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_course_desc" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/margin_small_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_course_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_tiny"
+                android:text="@{model.articleAuthor}"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/margin_normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider"
+                app:layout_constraintEnd_toStartOf="@id/tv_publish_at"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_publish_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_tiny"
+                android:text="@{model.publishDate}"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/margin_normal"
+                app:layout_constraintStart_toEndOf="@+id/tv_author"
+                app:layout_constraintEnd_toEndOf="@id/divider"
+                app:layout_constraintTop_toTopOf="@id/tv_author"
+                app:layout_constraintBottom_toBottomOf="@id/tv_author"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

@@ -5,9 +5,9 @@ import androidx.activity.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.blackstoneeit.ncgrtask.R
+import com.blackstoneeit.ncgrtask.databinding.ActivityMainBinding
 import com.blackstoneeit.ncgrtask.presentation.base.BaseActivity
 import com.blackstoneeit.ncgrtask.presentation.base.BaseViewModel
-import com.blackstoneeit.ncgrtask.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

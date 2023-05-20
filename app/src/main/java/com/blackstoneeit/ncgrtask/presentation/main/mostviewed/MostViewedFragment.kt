@@ -3,8 +3,8 @@ package com.blackstoneeit.ncgrtask.presentation.main.mostviewed
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.blackstoneeit.ncgrtask.R
-import com.blackstoneeit.ncgrtask.presentation.base.BaseFragment
 import com.blackstoneeit.ncgrtask.databinding.FragmentMostViewedBinding
+import com.blackstoneeit.ncgrtask.presentation.base.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

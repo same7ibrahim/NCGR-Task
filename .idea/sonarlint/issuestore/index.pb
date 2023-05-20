@@ -11,8 +11,6 @@ P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 A
 gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
-m
-=app/src/main/java/com/blackstoneeit/ncgrtask/MyApplication.kt,d/6/d6a88b25175a9d09f7ee14c59da57b6991f99daa
 }
 Mapp/src/main/java/com/blackstoneeit/ncgrtask/presentation/widget/SaveState.kt,0/f/0fff358538baaa8b34648b2d80404c91bafaaa7f
 <

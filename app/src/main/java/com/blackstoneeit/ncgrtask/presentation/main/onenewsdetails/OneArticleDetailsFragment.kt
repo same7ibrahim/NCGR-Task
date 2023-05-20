@@ -5,9 +5,9 @@ import android.webkit.*
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import com.blackstoneeit.ncgrtask.R
+import com.blackstoneeit.ncgrtask.databinding.FragmentOneArticleDetailsBinding
 import com.blackstoneeit.ncgrtask.presentation.base.BaseFragment
 import com.blackstoneeit.ncgrtask.presentation.base.BaseViewModel
-import com.blackstoneeit.ncgrtask.databinding.FragmentOneArticleDetailsBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

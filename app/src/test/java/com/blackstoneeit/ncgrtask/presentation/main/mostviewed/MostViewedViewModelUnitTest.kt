@@ -3,15 +3,11 @@ package com.blackstoneeit.ncgrtask.presentation.main.mostviewed
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
-import com.blackstoneeit.ncgrtask.data.model.response.Media
 import com.blackstoneeit.ncgrtask.data.model.response.MostViewedResponse
 import com.blackstoneeit.ncgrtask.data.model.response.Results
 import com.blackstoneeit.ncgrtask.domain.MostPopularUseCase
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
-import okhttp3.MediaType
-import okhttp3.ResponseBody
-import okio.BufferedSource
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -19,7 +15,6 @@ import org.junit.rules.TestRule
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.Mockito.*
-import org.mockito.MockitoAnnotations
 import org.mockito.kotlin.mock
 import org.robolectric.RobolectricTestRunner
 import retrofit2.Response
